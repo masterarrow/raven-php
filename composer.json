@@ -9,6 +9,10 @@
         {
             "name": "David Cramer",
             "email": "dcramer@gmail.com"
+        },
+        {
+            "name": "updated by masterarrow",
+            "email": "masterarrows@gmail.com"
         }
     ],
     "require-dev": {
@@ -29,7 +33,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "0.16.x-dev"
+            "dev-master": "0.16.1"
         }
     }
 }
