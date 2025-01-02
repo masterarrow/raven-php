@@ -1,14 +1,6 @@
 raven-php
 =========
 
-DEPRECATED: Please switch to the `sentry-php <https://github.com/getsentry/sentry-php>`_ package.
-
-.. image:: https://secure.travis-ci.org/getsentry/raven-php.png?branch=master
-   :target: http://travis-ci.org/getsentry/raven-php
-
-
-raven-php is a PHP client for `Sentry <https://getsentry.com/>`_.
-
 .. code-block:: php
 
     // Instantiate a new client with a compatible DSN
@@ -49,45 +41,10 @@ Install with Composer
 If you're using `Composer <https://getcomposer.org/>`_ to manage
 dependencies, you can add Raven with it.
 
-::
-
-    $ composer require raven/raven:$VERSION
-
-(replace ``$VERSION`` with one of the available versions on `Packagist <https://packagist.org/packages/raven/raven>`_)
-or to get the latest version off the master branch:
-
-::
-
-    $ composer require raven/raven:dev-master
-
-Note that using unstable versions is not recommended and should be avoided. Also
-you should define a maximum version, e.g. by doing ``>=0.6,<1.0`` or ``~0.6``.
-
-Alternatively, use the ``^`` operator for specifying a version, e.g.,
-
-::
-
-    $ composer require raven/raven:^0.11.0
+    $ composer require masterarrow/raven-php
 
 Composer will take care of the autoloading for you, so if you require the
 ``vendor/autoload.php``, you're good to go.
-
-
-Install source from GitHub
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-To install the source code:
-
-::
-
-    $ git clone git://github.com/getsentry/raven-php.git
-
-And including it using the autoloader:
-
-.. code-block:: php
-
-    require_once '/path/to/Raven/library/Raven/Autoloader.php';
-    Raven_Autoloader::register();
 
 Testing Your Connection
 -----------------------
